@@ -11,146 +11,73 @@ public class Run : MonoBehaviour
 {
 
     public Text stoptext;    
-    public Text runtext;    
-
+    public Text runtext;
+    public bool rungout;
     public bool run = false;
     public void toggole_run()
     {
+        List<Transform> Rung_out = GameObject.Find("Build_button").GetComponent<Build>().Rungs_output;
+
         run = !run;
+        if (run)
+        {
+            stoptext.gameObject.SetActive(true);
+            runtext.gameObject.SetActive(false);
+            foreach (Transform rout in Rung_out)
+            {
+                if (rout.GetChild(0).tag == "Coil") rout.GetChild(0).GetComponent<normall_out>().enabled = true;
+                else if (rout.GetChild(0).tag == "Rcoil") rout.GetChild(0).GetComponent<out_reset>().enabled = true;
+                else if (rout.GetChild(0).tag == "Scoil") rout.GetChild(0).GetComponent<Out_Set>().enabled = true;
+                else if (rout.GetChild(0).tag == "*") rout.GetChild(0).GetComponent<MUL>().enabled = true;
+                else if (rout.GetChild(0).tag == "-") rout.GetChild(0).GetComponent<SUB>().enabled = true;
+                else if (rout.GetChild(0).tag == "+") rout.GetChild(0).GetComponent<ADD>().enabled = true;
+                else if (rout.GetChild(0).tag == "di") rout.GetChild(0).GetComponent<DIV>().enabled = true;
+            }
+        }
+        if (!run)
+        {
+            stoptext.gameObject.SetActive(false);
+            runtext.gameObject.SetActive(true);
+            foreach (Transform rout in Rung_out)
+            {
+                if (rout.GetChild(0).tag == "Coil") rout.GetChild(0).GetComponent<normall_out>().enabled = false;
+                if (rout.GetChild(0).tag == "Rcoil") rout.GetChild(0).GetComponent<out_reset>().enabled = false;
+                if (rout.GetChild(0).tag == "Scoil") rout.GetChild(0).GetComponent<Out_Set>().enabled = false;
+                if (rout.GetChild(0).tag == "*") rout.GetChild(0).GetComponent<MUL>().enabled = false;
+                if (rout.GetChild(0).tag == "-") rout.GetChild(0).GetComponent<SUB>().enabled = false;
+                if (rout.GetChild(0).tag == "+") rout.GetChild(0).GetComponent<ADD>().enabled = false;
+                if (rout.GetChild(0).tag == "di") rout.GetChild(0).GetComponent<DIV>().enabled = false;
+
+            }
+        }
     }
     // Update is called once per frame
     void Update()
     {
         if (run)
         {
-            stoptext.gameObject.SetActive(true);
-            runtext.gameObject.SetActive(false);
 
-
-            List<List<string>> program = GameObject.Find("Build_button").GetComponent<Build>().program;
+            List<List<Bit>> program = GameObject.Find("Build_button").GetComponent<Build>().program;
             List<Transform> Rung_out = GameObject.Find("Build_button").GetComponent<Build>().Rungs_output;
             PLC current_stat = GameObject.Find("ProgrammingArea").GetComponent<PLC>();  //Fetching vertual PLC memory   
 
             int index = 0;
-            foreach (List<string> rung in program)
+            foreach (List<Bit> rung in program)
             {
-                
-                Rung_out[index].GetComponent<Rung_Out>().output = Examine(rung, current_stat);
+                rungout = true;
+                foreach (Bit instruction in rung)
+                {
+                    if (!instruction.state) rungout = false;
+                }
+
+                Rung_out[index].GetComponent<Rung_Out>().output = rungout;
+
                 index += 1;
             }
+            
 
 
-        }
-        if (!run)
-        {
-            stoptext.gameObject.SetActive(false);
-            runtext.gameObject.SetActive(true);
         }
     }
-    bool Examine(List<string> rung, PLC current_stat)
-    {
-        List<bool> this_rung = new List<bool>();
-        bool this_output = true;
-        foreach (string instruction in rung)
-        {
-               //substring if the address is passe with later "P0001"
-            if (instruction.Substring(0,3) == "XIC")
-            {
-                if (instruction.Substring(3, 1) == "P")
-                {
-                    this_rung.Add(current_stat.P[Int32.Parse(instruction.Substring(4))]);
-                }
-                else if (instruction.Substring(3, 1) == "T")
-                {
-                    this_rung.Add(current_stat.T[Int32.Parse(instruction.Substring(4))]);
-                }
-                else if (instruction.Substring(3, 1) == "C")
-                {
-                    this_rung.Add(current_stat.C[Int32.Parse(instruction.Substring(4))]);
-                }
-                else if (instruction.Substring(3, 1) == "M")
-                {
-                    this_rung.Add(current_stat.M[Int32.Parse(instruction.Substring(4))]);
-                }
-            }
-            else if (instruction.Substring(0, 3) == "XIO")
-            {
-                if (instruction.Substring(3, 1) == "P")
-                {
-                    this_rung.Add(!current_stat.P[Int32.Parse(instruction.Substring(4))]);
-                }
-                else if (instruction.Substring(3, 1) == "T")
-                {
-                    this_rung.Add(!current_stat.T[Int32.Parse(instruction.Substring(4))]);
-                }
-                else if (instruction.Substring(3, 1) == "C")
-                {
-                    this_rung.Add(!current_stat.C[Int32.Parse(instruction.Substring(4))]);
-                }
-                else if (instruction.Substring(3, 1) == "M")
-                {
-                    this_rung.Add(!current_stat.M[Int32.Parse(instruction.Substring(4))]);
-                }
-            }
-            //use the adress insted of comparing them
-            else if (instruction.Substring(0, 3) == ":<<")
-            {
-                Debug.Log(int.Parse(instruction.Substring(3).Split(':')[0])<int.Parse(instruction.Substring(3).Split(':')[1]));
-            }
-            else if (instruction.Substring(0, 3) == ":<=")
-            {
-                Debug.Log(int.Parse(instruction.Substring(3).Split(':')[0]) <= int.Parse(instruction.Substring(3).Split(':')[1]));
-            }
-            else if (instruction.Substring(0, 3) == ":>>")
-            {
-                Debug.Log(int.Parse(instruction.Substring(3).Split(':')[0]) > int.Parse(instruction.Substring(3).Split(':')[1]));
-            }
-            else if (instruction.Substring(0, 3) == ":<=")
-            {
-                Debug.Log(int.Parse(instruction.Substring(3).Split(':')[0]) <= int.Parse(instruction.Substring(3).Split(':')[1]));
-            }
-            else if (instruction.Substring(0, 3) == ":==")
-            {
-                Debug.Log(int.Parse(instruction.Substring(3).Split(':')[0]) == int.Parse(instruction.Substring(3).Split(':')[1]));
-            }
-            //use the address insted of comparing them
-            else if (instruction.Substring(0, 3) == "OOR")
-            {
-                this_rung.Add(do_or(instruction, current_stat));
-                Debug.Log(do_or(instruction, current_stat));
-            }
-            
-            
-        }
-        if (this_rung.Contains(false))
-        {
-            this_output = false;
-        }
-        return this_output;
-    }
-
-    bool do_or (string OR_content, PLC current_stat)
-    {
-        List<bool> minirungs_out = new List<bool>();
-        string[] x = OR_content.Split('|');
-        foreach (string minirung in x.ToList().Skip(1))
-        {
-            string[] instructions = minirung.Split('&');
-            List<string> this_minirung = new List<string>();
-            foreach (string instruction in instructions.Skip(1))
-            {
-                this_minirung.Add(instruction);
-            }
-            minirungs_out.Add(Examine(this_minirung, current_stat));
-
-            
-        }
-        if (minirungs_out.Contains(true))
-        {
-            return true;
-        }
-        return false;
-    }
-    
-    
+  
 }

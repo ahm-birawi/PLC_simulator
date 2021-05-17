@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using System.IO;
 using System.Net.Sockets;
 using UnityEngine;
@@ -7,69 +8,125 @@ using UnityEngine.UI;
 
 public class Build : MonoBehaviour
 {
-    public List<List<string>> program = new List<List<string>>();
+    PLC PLC;
+    public List<List<Bit>> program = new List<List<Bit>>();
     public List<Transform> Rungs_output = new List<Transform>();
+    private void Start()
+    {
+        PLC = GameObject.Find("ProgrammingArea").GetComponent<PLC>();
+    }
+    /*private void Update()
+   {
+        foreach (List<Bit> rung in program)
+        {
+            foreach (Bit instrcution in rung)
+            {
+                Debug.Log(instrcution.state);
+            }
+        }
+    }*/
     public void build()
     {
-        var Rungs = GameObject.FindGameObjectsWithTag("Input_Panel");
-        foreach(var rung in Rungs)
+        var rungs = GameObject.FindGameObjectsWithTag("Input_Panel");
+        foreach(var rung in rungs)
         {
 
-            List<string> this_rung = new List<string>();
-            //Transform input_panel = rung.transform.GetChild(0);
+            List<Bit> this_rung = new List<Bit>();
             foreach (Transform child in rung.transform)
             {
-                
-                if (child.tag == "OR")
-                {
-                    this_rung.Add(parallel(child));
-                }
-                else if (child.tag.Substring(0, 1) == ":") 
-                {
-                    this_rung.Add(reconize_compare(child));
-                }
-                else
-                {
-                    this_rung.Add(reconize_instruction(child));
-                }
+                this_rung.Add(redirect(child));
             }
             program.Add(this_rung);
 
-            Transform parent = rung.transform.parent;
-            Rungs_output.Add(parent.GetChild(1));
+            Transform OutputPanel = rung.transform.parent.GetChild(1);
+            Rungs_output.Add(OutputPanel);
+            
         }
     }
-    string reconize_instruction (Transform instruction)   //return a list of string "this_instruction" depending on the gameobject "instruction"
-    {
-        
-        string this_instruction = instruction.tag + instruction.GetComponentInChildren<InputField>().text;
-        Debug.Log(this_instruction);
 
-        return this_instruction;
+    Bit redirect (Transform inst)
+    {
+        /*if (inst.tag == "OR")
+        {
+            return(parallel(inst));
+        }*/
+        if (inst.tag.Substring(0, 1) == ":") 
+            return (TwoInputfield(inst));
+
+        else if (inst.tag == "OR")
+        {
+            inst.GetComponent<Or>().BuildOr();
+            return inst.GetComponent<Or>().or_out;
+        }
+
+        else 
+            return OneInputfield(inst);
+        
+
     }
 
-    string parallel (Transform OR)
+    Bit OneInputfield(Transform instruction_transform)
     {
-        string OR_out = "OOR";
-        foreach (Transform minirung in OR)
+        string instruction = instruction_transform.tag + instruction_transform.GetComponentInChildren<InputField>().text;
+        if (instruction.Substring(0, 3) == "XIC")
         {
-            OR_out += "|";
-            foreach (Transform instruction in minirung)
+            if (instruction.Substring(3, 1) == "P")
             {
-                OR_out += "&" + instruction.tag;
-                OR_out += instruction.GetComponentInChildren<InputField>().text;
+                return PLC.P[Int32.Parse(instruction.Substring(4))];
+            }
+            else if (instruction.Substring(3, 1) == "T")
+            {
+                return PLC.T[Int32.Parse(instruction.Substring(4))];
+            }
+            else if (instruction.Substring(3, 1) == "C")
+            {
+                return PLC.C[Int32.Parse(instruction.Substring(4))];
+            }
+            else if (instruction.Substring(3, 1) == "M")
+            {
+                return PLC.M[Int32.Parse(instruction.Substring(4))];
             }
         }
-        Debug.Log(OR_out);
-        return OR_out;
+        else if (instruction.Substring(0, 3) == "XIO")
+        {
+            if (instruction.Substring(3, 1) == "P")
+            {
+                return PLC.P[Int32.Parse(instruction.Substring(4))];
+            }
+            else if (instruction.Substring(3, 1) == "T")
+            {
+                return PLC.T[Int32.Parse(instruction.Substring(4))];
+            }
+            else if (instruction.Substring(3, 1) == "C")
+            {
+                return PLC.C[Int32.Parse(instruction.Substring(4))];
+            }
+            else if (instruction.Substring(3, 1) == "M")
+            {
+                return PLC.M[Int32.Parse(instruction.Substring(4))];
+            }
+        }
+        Debug.Log("error");
+        return new Bit();
+    }
+
+    Bit TwoInputfield(Transform instruction_transform)
+    {
+        if (instruction_transform.tag == ":>>")  
+            return instruction_transform.gameObject.GetComponent<Larger>().Compare_result;
+        else if (instruction_transform.tag == ":<<") 
+            return instruction_transform.gameObject.GetComponent<Smaller>().Compare_result;
+        else if (instruction_transform.tag == ":<=") 
+            return instruction_transform.gameObject.GetComponent<Smaller_equ>().Compare_result;
+        else if (instruction_transform.tag == ":>=") 
+            return instruction_transform.gameObject.GetComponent<Largger_equ>().Compare_result;
+        else 
+            return instruction_transform.gameObject.GetComponent<Equ>().Compare_result;
 
     }
-    string reconize_compare(Transform instruction)
-    {
-        string address1 = instruction.GetChild(0).GetComponent<InputField>().text;
-        string address2 = instruction.GetChild(1).GetComponent<InputField>().text;
-        string this_compare = instruction.tag+address1 + ":" + address2;
-        Debug.Log(this_compare);
-        return this_compare;
-    }
+    
+
+    
 }
+
+

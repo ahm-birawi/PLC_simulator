@@ -963,10 +963,10 @@ GameObject:
   - component: {fileID: 759922551239359264}
   - component: {fileID: 759922551239359265}
   - component: {fileID: 759922551239359262}
-  - component: {fileID: 2691114266406927064}
+  - component: {fileID: 8203399705379525774}
   m_Layer: 5
   m_Name: (R)
-  m_TagString: Untagged
+  m_TagString: Rcoil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1102,14 +1102,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15, y: 15}
   m_EdgeRadius: 0
---- !u!114 &2691114266406927064
+--- !u!114 &8203399705379525774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759922551239359260}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 950eb734219f21f4cae2e6ad8ed45f36, type: 3}
   m_Name: 
@@ -1446,10 +1446,10 @@ GameObject:
   - component: {fileID: 759922551653090821}
   - component: {fileID: 8980770557454135778}
   - component: {fileID: 759922551653090818}
-  - component: {fileID: 7537031618437854278}
+  - component: {fileID: 1394571171248179366}
   m_Layer: 5
   m_Name: OUTPUT
-  m_TagString: Untagged
+  m_TagString: Coil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1585,14 +1585,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15, y: 15}
   m_EdgeRadius: 0
---- !u!114 &7537031618437854278
+--- !u!114 &1394571171248179366
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759922551653090816}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c528fb056565e243a0a7fe2d4f37e16, type: 3}
   m_Name: 
@@ -1999,10 +1999,10 @@ GameObject:
   - component: {fileID: 759922552215747967}
   - component: {fileID: 759922552215747964}
   - component: {fileID: 759922552215747965}
-  - component: {fileID: 916290363020925334}
+  - component: {fileID: 4965836701211526304}
   m_Layer: 5
   m_Name: (S)
-  m_TagString: Untagged
+  m_TagString: Scoil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2138,14 +2138,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15, y: 15}
   m_EdgeRadius: 0
---- !u!114 &916290363020925334
+--- !u!114 &4965836701211526304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759922552215747963}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39ec8d65b25747343af232b502b3bf5e, type: 3}
   m_Name: 

@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 2202290794636838245}
   - component: {fileID: 891965000989959313}
   - component: {fileID: 5964525947195370927}
+  - component: {fileID: 1966710833338229954}
   m_Layer: 5
   m_Name: SMALLER OR EQU
   m_TagString: Untagged
@@ -388,6 +389,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
+--- !u!114 &1966710833338229954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907706443878050164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a41fe6684d8b4c98ac6d0f240e768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2119149451733348347
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,9 +637,10 @@ GameObject:
   - component: {fileID: 3356282429528582030}
   - component: {fileID: 6930651476202426032}
   - component: {fileID: 1513077933638979227}
+  - component: {fileID: 2753143549612007085}
   m_Layer: 5
   m_Name: BIGGER OR EQU
-  m_TagString: Untagged
+  m_TagString: :>=
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -776,6 +790,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
+--- !u!114 &2753143549612007085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3021082218619631743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3f8cccfb1d8a54cb19b73419e3837e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3297252853575943222
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,9 +818,10 @@ GameObject:
   - component: {fileID: 3297252853575943221}
   - component: {fileID: 3297252853575943220}
   - component: {fileID: 5310320678035825069}
+  - component: {fileID: 2430021797634048467}
   m_Layer: 5
   m_Name: SMALLER
-  m_TagString: Untagged
+  m_TagString: :<<
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -944,6 +971,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
+--- !u!114 &2430021797634048467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297252853575943222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78623e57d36956b4e88529e70b7d27da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3297252854416482864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,7 +1672,7 @@ GameObject:
   - component: {fileID: 8223736921402840667}
   m_Layer: 5
   m_Name: InputField (2)
-  m_TagString: Untagged
+  m_TagString: :<=
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1855,9 +1894,10 @@ GameObject:
   - component: {fileID: 7901728804288832625}
   - component: {fileID: 656471297866315157}
   - component: {fileID: 8876006574711370699}
+  - component: {fileID: 1119593412421673113}
   m_Layer: 5
   m_Name: BIGGER
-  m_TagString: Untagged
+  m_TagString: :>>
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2007,6 +2047,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
+--- !u!114 &1119593412421673113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035780824804454258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6af1d1da9da58419a9863e291e63b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4233295103884949813
 GameObject:
   m_ObjectHideFlags: 0
@@ -3518,9 +3570,10 @@ GameObject:
   - component: {fileID: 8478096208927017596}
   - component: {fileID: 7528317874771840253}
   - component: {fileID: 6746113792215113381}
+  - component: {fileID: 7204887484610641805}
   m_Layer: 5
   m_Name: EQUAL
-  m_TagString: Untagged
+  m_TagString: :==
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3670,6 +3723,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
+--- !u!114 &7204887484610641805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8044313420849000530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1161d5ffa91692b46a9f8bf201730428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8241945519723231197
 GameObject:
   m_ObjectHideFlags: 0
