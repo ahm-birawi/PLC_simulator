@@ -33,6 +33,19 @@ TagManager:
   - OOR
   - OR
   - simulate
+  - :>>
+  - :>=
+  - :<<
+  - :<=
+  - :==
+  - Coil
+  - Rcoil
+  - Scoil
+  - +
+  - '-'
+  - '*'
+  - /
+  - di
   layers:
   - Default
   - TransparentFX
