@@ -44,8 +44,9 @@ TagManager:
   - +
   - '-'
   - '*'
-  - /
   - di
+  - InputField
+  - TC
   layers:
   - Default
   - TransparentFX

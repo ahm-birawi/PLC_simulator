@@ -17,10 +17,15 @@ public class Run : MonoBehaviour
     public void toggole_run()
     {
         List<Transform> Rung_out = GameObject.Find("Build_button").GetComponent<Build>().Rungs_output;
+        var inputfields = GameObject.FindGameObjectsWithTag("InputField");
 
         run = !run;
         if (run)
         {
+            foreach (var inputfield in inputfields)
+            {
+                inputfield.GetComponent<InputField>().readOnly = true;
+            }
             stoptext.gameObject.SetActive(true);
             runtext.gameObject.SetActive(false);
             foreach (Transform rout in Rung_out)
@@ -32,10 +37,15 @@ public class Run : MonoBehaviour
                 else if (rout.GetChild(0).tag == "-") rout.GetChild(0).GetComponent<SUB>().enabled = true;
                 else if (rout.GetChild(0).tag == "+") rout.GetChild(0).GetComponent<ADD>().enabled = true;
                 else if (rout.GetChild(0).tag == "di") rout.GetChild(0).GetComponent<DIV>().enabled = true;
+                else if (rout.GetChild(0).name == "TON") rout.GetChild(0).GetComponent<TON>().enabled = true;
             }
         }
         if (!run)
         {
+            foreach (var inputfield in inputfields)
+            {
+                inputfield.GetComponent<InputField>().readOnly = false;
+            }
             stoptext.gameObject.SetActive(false);
             runtext.gameObject.SetActive(true);
             foreach (Transform rout in Rung_out)
@@ -47,6 +57,7 @@ public class Run : MonoBehaviour
                 if (rout.GetChild(0).tag == "-") rout.GetChild(0).GetComponent<SUB>().enabled = false;
                 if (rout.GetChild(0).tag == "+") rout.GetChild(0).GetComponent<ADD>().enabled = false;
                 if (rout.GetChild(0).tag == "di") rout.GetChild(0).GetComponent<DIV>().enabled = false;
+                else if (rout.GetChild(0).name == "TON") rout.GetChild(0).GetComponent<TON>().enabled = false;
 
             }
         }

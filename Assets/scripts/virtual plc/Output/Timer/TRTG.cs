@@ -6,16 +6,14 @@ using UnityEngine.UI;
 public class TRTG : MonoBehaviour
 {
     Transform inputfield0;
-    Transform inputfield1;
-    float acc = 0f;
-    float preset = 0f;
-    float value;
+    public float acc = 0f;
+    public float preset = 0f;
     bool last_stat = false;
 
     private void Start()
     {
         inputfield0 = transform.GetChild(0);
-        inputfield1 = transform.GetChild(1);
+        preset = float.Parse(transform.GetChild(1).GetComponent<InputField>().text);
     }
 
     // Update is called once per frame
@@ -37,15 +35,6 @@ public class TRTG : MonoBehaviour
             if (acc <= 0) GameObject.Find("ProgrammingArea").GetComponent<PLC>().T[int.Parse(inputfield0.GetComponent<InputField>().text)].state = false;
             Debug.Log(acc + " " + int.Parse(inputfield0.GetComponent<InputField>().text));
             last_stat = GetComponentInParent<Rung_Out>().output;
-        }
-        else
-        {
-            inputfield0 = transform.GetChild(0);
-            inputfield1 = transform.GetChild(1);
-            if (float.TryParse(inputfield1.GetComponent<InputField>().text, out value))
-            {
-                preset = value;
-            }
         }
 
 

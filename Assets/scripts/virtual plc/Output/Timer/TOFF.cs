@@ -6,21 +6,18 @@ public class TOFF : MonoBehaviour
 {
     // Start is called before the first frame update
     Transform inputfield0;
-    Transform inputfield1;
-    float acc = 0f;
-    float preset = 0f;
-    float value;
+    public float acc = 0f;
+    public float preset = 0f;
 
     private void Start()
     {
         inputfield0 = transform.GetChild(0);
-        inputfield1 = transform.GetChild(1);
+        preset = float.Parse(transform.GetChild(1).GetComponent<InputField>().text);
     }
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Run_button").GetComponent<Run>().run)
-        {
+        
             if (GetComponentInParent<Rung_Out>().output )
             {
                 acc = 0;
@@ -39,14 +36,6 @@ public class TOFF : MonoBehaviour
                 GameObject.Find("ProgrammingArea").GetComponent<PLC>().T[int.Parse(inputfield0.GetComponent<InputField>().text)].state = false;
             }
         }
-        else
-        {
-            inputfield0 = transform.GetChild(0);
-            inputfield1 = transform.GetChild(1);
-            if (float.TryParse(inputfield1.GetComponent<InputField>().text, out value))
-            {
-                preset = value;
-            }
-        }
-    }
+        
+    
 }

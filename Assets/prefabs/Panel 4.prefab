@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4749489072227019270}
   m_Layer: 5
   m_Name: InputField (2)
-  m_TagString: Untagged
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 1966710833338229954}
   m_Layer: 5
   m_Name: SMALLER OR EQU
-  m_TagString: Untagged
+  m_TagString: :<=
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 8462125240091275069}
   m_Layer: 5
   m_Name: InputField (1)
-  m_TagString: Untagged
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1311,7 +1311,7 @@ GameObject:
   - component: {fileID: 5302702569200575676}
   m_Layer: 5
   m_Name: InputField (2)
-  m_TagString: Untagged
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1531,7 +1531,7 @@ GameObject:
   - component: {fileID: 2070132644688147344}
   m_Layer: 5
   m_Name: InputField (1)
-  m_TagString: Untagged
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1672,7 +1672,7 @@ GameObject:
   - component: {fileID: 8223736921402840667}
   m_Layer: 5
   m_Name: InputField (2)
-  m_TagString: :<=
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2073,7 +2073,7 @@ GameObject:
   - component: {fileID: 5641109074792542620}
   m_Layer: 5
   m_Name: InputField (2)
-  m_TagString: Untagged
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2372,7 +2372,7 @@ GameObject:
   - component: {fileID: 6023581167552766928}
   m_Layer: 5
   m_Name: InputField (1)
-  m_TagString: Untagged
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2513,7 +2513,7 @@ GameObject:
   - component: {fileID: 5838065079278208608}
   m_Layer: 5
   m_Name: InputField (1)
-  m_TagString: Untagged
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2891,7 +2891,7 @@ GameObject:
   - component: {fileID: 9100762272733189533}
   m_Layer: 5
   m_Name: InputField (2)
-  m_TagString: Untagged
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3427,7 +3427,7 @@ GameObject:
   - component: {fileID: 6727218810330014475}
   m_Layer: 5
   m_Name: InputField (1)
-  m_TagString: Untagged
+  m_TagString: InputField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

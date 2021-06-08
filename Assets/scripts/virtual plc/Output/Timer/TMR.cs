@@ -5,23 +5,19 @@ using UnityEngine.UI;
 public class TMR : MonoBehaviour
 {
 
-    Transform inputfield0;
-    Transform inputfield1;
-    float acc = 0f;
-    float preset = 0f;
+    Transform inputfield0;  
+    public float acc = 0f;
+    public float preset = 0f;
     float value;
 
     private void Start()
     {
         inputfield0 = transform.GetChild(0);
-        inputfield1 = transform.GetChild(1);
+        preset = float.Parse(transform.GetChild(1).GetComponent<InputField>().text);
     }
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Run_button").GetComponent<Run>().run)
-        {
-            Debug.Log("running");
             if (GetComponentInParent<Rung_Out>().output)
             {
                 Debug.Log("out true");
@@ -42,15 +38,5 @@ public class TMR : MonoBehaviour
                 }
             }
             Debug.Log(acc);
-        }
-        else
-        {
-            inputfield0 = transform.GetChild(0);
-            inputfield1 = transform.transform.GetChild(1);
-            if (float.TryParse(inputfield1.GetComponent<InputField>().text, out value))
-            {
-                preset = value;
-            }
-        }
     }
 }
