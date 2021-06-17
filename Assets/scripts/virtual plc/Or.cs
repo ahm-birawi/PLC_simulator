@@ -52,7 +52,7 @@ public class Or : MonoBehaviour
     public void BuildOr()
     {
         minirung1transform = transform.GetChild(0);
-        minirung2transform = transform.GetChild(1);
+        minirung2transform = transform.GetChild(4);
         minirung1 = new List<Bit>();
         minirung2 = new List<Bit>();
 

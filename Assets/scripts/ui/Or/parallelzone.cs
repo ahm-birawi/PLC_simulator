@@ -36,12 +36,12 @@ public class parallelzone : MonoBehaviour, IDropHandler, IPointerEnterHandler, I
 
 			// change the rung height
 
-			if (rungrect != null)
+			/*if (rungrect != null)
 			{
 				RectTransform panelRectTransform = rungrect.GetComponent<RectTransform>();
 
 				panelRectTransform.sizeDelta = new Vector2(panelRectTransform.sizeDelta.x, 76);
-			}
+			}*/
 
 		}
 	}

@@ -323,7 +323,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (6)
+      value: P22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -469,10 +469,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released10
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P10R
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -486,10 +485,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed10
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P10S
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -581,7 +579,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 65970952}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389919363}
+        m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+        m_MethodName: P1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &65970952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,45 +642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released1
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed1
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &69793277
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,10 +864,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released13
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P13R
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -909,10 +880,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed13
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P13S
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1122,7 +1092,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (14)
+      value: P30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -1214,7 +1184,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 198472873}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389919363}
+        m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+        m_MethodName: P4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &198472873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,45 +1247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released4
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed4
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!224 &201150812 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1066397612192189826, guid: f44d9b0cd89fa3f47bcc884df7b26962,
@@ -1431,7 +1375,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (11)
+      value: P27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -1602,7 +1546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 362753022}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389919363}
+        m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+        m_MethodName: P5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &362753022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1653,45 +1609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released5
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed5
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &367367967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,7 +2138,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (2)
+      value: P18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -2345,7 +2263,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (15)
+      value: P31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -2476,7 +2394,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (12)
+      value: P28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -2786,10 +2704,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released14
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P14R
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2803,10 +2720,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed14
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P14S
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3292,10 +3208,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released12
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P12R
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3309,10 +3224,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed12
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P12S
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3443,7 +3357,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (8)
+      value: P24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -3738,7 +3652,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (3)
+      value: P19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -3755,6 +3669,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 111abd493ecd68943943170ca24a6796,
         type: 3}
+    - target: {fileID: 1066397612192189825, guid: f44d9b0cd89fa3f47bcc884df7b26962,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066397612192189825, guid: f44d9b0cd89fa3f47bcc884df7b26962,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066397612192189825, guid: f44d9b0cd89fa3f47bcc884df7b26962,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1066397612192189826, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3863,7 +3792,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (1)
+      value: P17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -4088,7 +4017,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (7)
+      value: P23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -4292,7 +4221,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (13)
+      value: P29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -4379,7 +4308,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1326014846}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389919363}
+        m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+        m_MethodName: P0
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1326014846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4430,45 +4371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!114 &1326014849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4481,7 +4384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3f661f9f111c94fa5457a8a6c39d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plc: {fileID: 0}
 --- !u!1 &1331085847
 GameObject:
   m_ObjectHideFlags: 0
@@ -4731,6 +4633,7 @@ GameObject:
   - component: {fileID: 1389919362}
   - component: {fileID: 1389919361}
   - component: {fileID: 1389919360}
+  - component: {fileID: 1389919363}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -4837,6 +4740,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389919358}
   m_CullTransparentMesh: 0
+--- !u!114 &1389919363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389919358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc55079c70ca10b4285d472cdaaf358e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1399589413 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1066397612192189826, guid: f44d9b0cd89fa3f47bcc884df7b26962,
@@ -4985,10 +4900,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released11
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P11R
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5002,10 +4916,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed11
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P11S
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5236,10 +5149,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released15
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P15R
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5253,10 +5165,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed15
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P15S
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5408,10 +5319,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released9
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P9R
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5425,10 +5335,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed9
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P9S
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5678,7 +5587,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1504959278}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389919363}
+        m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+        m_MethodName: P7
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1504959278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5729,45 +5650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released7
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed7
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &1530990432
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,7 +5891,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1628267951}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389919363}
+        m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+        m_MethodName: P2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1628267951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6059,45 +5954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released2
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed2
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &1629497128
 GameObject:
   m_ObjectHideFlags: 0
@@ -6180,7 +6037,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1629497131}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389919363}
+        m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+        m_MethodName: P6
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1629497131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6231,45 +6100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released6
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed6
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &1700759265
 GameObject:
   m_ObjectHideFlags: 0
@@ -6470,7 +6301,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (5)
+      value: P21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -6556,7 +6387,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1793607689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389919363}
+        m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+        m_MethodName: P3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1793607689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6607,45 +6450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released3
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed3
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1001 &1807471137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6767,7 +6572,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (9)
+      value: P25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -6971,7 +6776,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (10)
+      value: P26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -7279,18 +7084,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
   - eventID: 3
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: released8
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P8R
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7304,10 +7104,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: -526137612269749414, guid: f44d9b0cd89fa3f47bcc884df7b26962,
-            type: 3}
-          m_TargetAssemblyTypeName: input_output_experminet, Assembly-CSharp
-          m_MethodName: Pressed8
+        - m_Target: {fileID: 1389919363}
+          m_TargetAssemblyTypeName: InputControl, Assembly-CSharp
+          m_MethodName: P8S
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7596,7 +7395,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp (4)
+      value: P20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
@@ -7612,6 +7411,7 @@ GameObject:
   - component: {fileID: 2095416695}
   - component: {fileID: 2095416694}
   - component: {fileID: 2095416693}
+  - component: {fileID: 2095416696}
   m_Layer: 5
   m_Name: Panel 2
   m_TagString: Untagged
@@ -7718,6 +7518,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095416691}
   m_CullTransparentMesh: 0
+--- !u!114 &2095416696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095416691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c8ef7e7919f4041bfb7eefbb599566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &2139669699 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1066397612192189826, guid: f44d9b0cd89fa3f47bcc884df7b26962,
@@ -7737,6 +7549,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 111abd493ecd68943943170ca24a6796,
         type: 3}
+    - target: {fileID: 1066397612192189825, guid: f44d9b0cd89fa3f47bcc884df7b26962,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066397612192189825, guid: f44d9b0cd89fa3f47bcc884df7b26962,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066397612192189825, guid: f44d9b0cd89fa3f47bcc884df7b26962,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1066397612192189826, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7845,7 +7672,7 @@ PrefabInstance:
     - target: {fileID: 1066397612192189827, guid: f44d9b0cd89fa3f47bcc884df7b26962,
         type: 3}
       propertyPath: m_Name
-      value: out_exp
+      value: P16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44d9b0cd89fa3f47bcc884df7b26962, type: 3}
