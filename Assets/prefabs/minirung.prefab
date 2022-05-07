@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 4913812960784517585}
   - component: {fileID: 7664210196643934719}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Panel0
   m_TagString: parallel_instr.
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4598d2ca072624c8e9aea1b0efa5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  length: 0
 --- !u!114 &7664210196643934719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,6 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4598d2ca072624c8e9aea1b0efa5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  length: 0
 --- !u!114 &7204600813268601953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,6 +497,7 @@ GameObject:
   - component: {fileID: 7284763509675088904}
   - component: {fileID: 6836393948655183591}
   - component: {fileID: 902840647646883073}
+  - component: {fileID: 4154534378116935098}
   m_Layer: 5
   m_Name: minirung
   m_TagString: OR
@@ -610,3 +613,15 @@ MonoBehaviour:
   width: 76
   panel1T: {fileID: 2272110917412120382}
   panel2T: {fileID: 9107387621028365900}
+--- !u!114 &4154534378116935098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8318559491692101922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27784b4c109a1054eb4561ab28b9bc8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

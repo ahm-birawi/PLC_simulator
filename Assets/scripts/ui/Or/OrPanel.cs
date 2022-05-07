@@ -14,6 +14,7 @@ public class OrPanel : MonoBehaviour
     int panel2;
     public Transform panel1T;
     public Transform panel2T;
+    
     void Update()
     {
         panel1 = panel1T.childCount-1;

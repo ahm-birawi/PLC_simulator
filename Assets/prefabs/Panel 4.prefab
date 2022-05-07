@@ -120,13 +120,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 355160492421194282}
   m_TextComponent: {fileID: 4896948935014306995}
   m_Placeholder: {fileID: 7929668274088619397}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 2202290794636838245}
   - component: {fileID: 891965000989959313}
   - component: {fileID: 5964525947195370927}
-  - component: {fileID: 1966710833338229954}
+  - component: {fileID: 2698448650080700472}
   m_Layer: 5
   m_Name: SMALLER OR EQU
   m_TagString: :<=
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
---- !u!114 &1966710833338229954
+--- !u!114 &2698448650080700472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -398,9 +398,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1907706443878050164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41a41fe6684d8b4c98ac6d0f240e768, type: 3}
+  m_Script: {fileID: 11500000, guid: 58944694b964afe42a85664ce5da32a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addrs1: {fileID: 5478423101621727397}
+  addrs2: {fileID: 2220536950288409796}
 --- !u!1 &2119149451733348347
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,13 +602,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8257199152199689673}
   m_TextComponent: {fileID: 6733711382776042299}
   m_Placeholder: {fileID: 7514146001132287834}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -637,7 +639,7 @@ GameObject:
   - component: {fileID: 3356282429528582030}
   - component: {fileID: 6930651476202426032}
   - component: {fileID: 1513077933638979227}
-  - component: {fileID: 2753143549612007085}
+  - component: {fileID: 2655100975687654477}
   m_Layer: 5
   m_Name: BIGGER OR EQU
   m_TagString: :>=
@@ -790,7 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
---- !u!114 &2753143549612007085
+--- !u!114 &2655100975687654477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -799,9 +801,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3021082218619631743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3f8cccfb1d8a54cb19b73419e3837e, type: 3}
+  m_Script: {fileID: 11500000, guid: 64010b3732f05d24887ab57442cf7008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addrs1: {fileID: 6733711382776042299}
+  addrs2: {fileID: 2945273377819400870}
 --- !u!1 &3297252853575943222
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,7 +822,7 @@ GameObject:
   - component: {fileID: 3297252853575943221}
   - component: {fileID: 3297252853575943220}
   - component: {fileID: 5310320678035825069}
-  - component: {fileID: 2430021797634048467}
+  - component: {fileID: 3352179360409910013}
   m_Layer: 5
   m_Name: SMALLER
   m_TagString: :<<
@@ -971,7 +975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
---- !u!114 &2430021797634048467
+--- !u!114 &3352179360409910013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -980,9 +984,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3297252853575943222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78623e57d36956b4e88529e70b7d27da, type: 3}
+  m_Script: {fileID: 11500000, guid: 686908d3ddac7e044a5c7d07c7a2e2e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addrs1: {fileID: 7007442107296865825}
+  addrs2: {fileID: 3422682220824755334}
 --- !u!1 &3297252854416482864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,13 +1423,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 731440118609386768}
   m_TextComponent: {fileID: 3422682220824755334}
   m_Placeholder: {fileID: 7432448409570354144}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1637,13 +1643,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8246461037591646120}
   m_TextComponent: {fileID: 7905842164363737323}
   m_Placeholder: {fileID: 607946095753424205}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1778,13 +1784,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3374542272813493262}
   m_TextComponent: {fileID: 2220536950288409796}
   m_Placeholder: {fileID: 8331753068147843283}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1894,7 +1900,7 @@ GameObject:
   - component: {fileID: 7901728804288832625}
   - component: {fileID: 656471297866315157}
   - component: {fileID: 8876006574711370699}
-  - component: {fileID: 1119593412421673113}
+  - component: {fileID: 5020933661961815100}
   m_Layer: 5
   m_Name: BIGGER
   m_TagString: :>>
@@ -2047,7 +2053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
---- !u!114 &1119593412421673113
+--- !u!114 &5020933661961815100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2056,9 +2062,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4035780824804454258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f6af1d1da9da58419a9863e291e63b3, type: 3}
+  m_Script: {fileID: 11500000, guid: c980df53136fa0748ba46daf60e08655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addrs1: {fileID: 7905842164363737323}
+  addrs2: {fileID: 4896948935014306995}
 --- !u!1 &4233295103884949813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,13 +2187,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1666396915026730666}
   m_TextComponent: {fileID: 7590061482338008991}
   m_Placeholder: {fileID: 8076072501297844822}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2478,13 +2486,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3154905532800720384}
   m_TextComponent: {fileID: 7187387261311936047}
   m_Placeholder: {fileID: 7673262930182155913}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2619,13 +2627,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 627242846050433612}
   m_TextComponent: {fileID: 7007442107296865825}
   m_Placeholder: {fileID: 6473862801965028636}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2997,13 +3005,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6051330954926634720}
   m_TextComponent: {fileID: 2945273377819400870}
   m_Placeholder: {fileID: 2582589908111410544}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -3533,13 +3541,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 364301496692926308}
   m_TextComponent: {fileID: 5478423101621727397}
   m_Placeholder: {fileID: 4251961095695667349}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
@@ -3570,7 +3578,7 @@ GameObject:
   - component: {fileID: 8478096208927017596}
   - component: {fileID: 7528317874771840253}
   - component: {fileID: 6746113792215113381}
-  - component: {fileID: 7204887484610641805}
+  - component: {fileID: 7279737162800923731}
   m_Layer: 5
   m_Name: EQUAL
   m_TagString: :==
@@ -3723,7 +3731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rungrect: {fileID: 0}
---- !u!114 &7204887484610641805
+--- !u!114 &7279737162800923731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3732,9 +3740,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8044313420849000530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1161d5ffa91692b46a9f8bf201730428, type: 3}
+  m_Script: {fileID: 11500000, guid: f75614843873c424685c1e09f5509cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addrs1: {fileID: 7187387261311936047}
+  addrs2: {fileID: 7590061482338008991}
 --- !u!1 &8241945519723231197
 GameObject:
   m_ObjectHideFlags: 0

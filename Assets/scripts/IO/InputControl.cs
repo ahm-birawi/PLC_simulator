@@ -1,141 +1,121 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class InputControl : MonoBehaviour
 {
-    PLC PLC;
+    public VirtualPLC.PLC plc;
     private void Start()
     {
-        PLC = GameObject.Find("ProgrammingArea").GetComponent<PLC>();
+        plc = GameObject.Find("Build_button").GetComponent<VPLCBuild>().plc;
     }
     public void P0()
     {
-
-        PLC.P[0].state = !PLC.P[0].state;
-
+        plc.InputOutputFile[0, 0] = !plc.InputOutputFile[0, 0];
     }
     public void P1()
     {
-
-        PLC.P[1].state = !PLC.P[1].state;
-
+        plc.InputOutputFile[0, 1] = !plc.InputOutputFile[0, 1];
     }
     public void P2()
     {
-
-        PLC.P[2].state = !PLC.P[2].state;
-
+        plc.InputOutputFile[0, 2] = !plc.InputOutputFile[0, 2];
     }
     public void P3()
     {
-
-        PLC.P[3].state = !PLC.P[3].state;
-
+        plc.InputOutputFile[0, 3] = !plc.InputOutputFile[0, 3];
     }
     public void P4()
     {
-
-        PLC.P[4].state = !PLC.P[4].state;
-
+        plc.InputOutputFile[0, 4] = !plc.InputOutputFile[0, 4];
     }
     public void P5()
     {
-
-        PLC.P[5].state = !PLC.P[5].state;
-
+        plc.InputOutputFile[0, 5] = !plc.InputOutputFile[0, 5];
     }
     public void P6()
     {
-
-        PLC.P[6].state = !PLC.P[6].state;
-
+        plc.InputOutputFile[0, 6] = !plc.InputOutputFile[0, 6];
     }
     public void P7()
     {
-
-        PLC.P[7].state = !PLC.P[7].state;
-
+        plc.InputOutputFile[0, 7] = !plc.InputOutputFile[0, 7];
     }
     public void P8S()
     {
-
-        PLC.P[8].state = true;
-
+        plc.InputOutputFile[0, 8] = true;
     }
     public void P8R()
     {
-        PLC.P[8].state = false;
+        plc.InputOutputFile[0, 8] = false;
     }
     public void P9S()
     {
 
-        PLC.P[9].state = true;
+        plc.InputOutputFile[0, 9] = true;
 
     }
     public void P9R()
     {
-        PLC.P[9].state = false;
+        plc.InputOutputFile[0, 9] = false;
     }
     public void P10S()
     {
 
-        PLC.P[10].state = true;
+        plc.InputOutputFile[0, 10] = true;
 
     }
     public void P10R()
     {
-        PLC.P[10].state = false;
+        plc.InputOutputFile[0, 10] = false;
     }
     public void P11S()
     {
 
-        PLC.P[11].state = true;
+        plc.InputOutputFile[0, 11] = true;
 
     }
     public void P11R()
     {
-        PLC.P[11].state = false;
+        plc.InputOutputFile[0, 11] = false;
     }
     public void P12S()
     {
 
-        PLC.P[12].state = true;
+        plc.InputOutputFile[0, 12] = true;
 
     }
     public void P12R()
     {
-        PLC.P[12].state = false;
+        plc.InputOutputFile[0, 12] = false;
     }
     public void P13S()
     {
 
-        PLC.P[13].state = true;
+        plc.InputOutputFile[0, 13] = true;
 
     }
     public void P13R()
     {
-        PLC.P[13].state = false;
+        plc.InputOutputFile[0, 13] = false;
     }
     public void P14S()
     {
 
-        PLC.P[14].state = true;
+        plc.InputOutputFile[0, 14] = true;
 
     }
     public void P14R()
     {
-        PLC.P[14].state = false;
+        plc.InputOutputFile[0, 14] = false;
     }
     public void P15S()
     {
 
-        PLC.P[15].state = true;
+        plc.InputOutputFile[0, 15] = true;
 
     }
     public void P15R()
     {
-        PLC.P[15].state = false;
+        plc.InputOutputFile[0, 15] = false;
     }
 }
 

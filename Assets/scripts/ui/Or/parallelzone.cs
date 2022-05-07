@@ -24,15 +24,24 @@ public class parallelzone : MonoBehaviour, IDropHandler, IPointerEnterHandler, I
 
 	public void OnDrop(PointerEventData eventData)
 	{
-		Debug.Log(eventData.pointerDrag.name + " was dropped on " + gameObject.name);
+
 
 		parallel_instruction d = eventData.pointerDrag.GetComponent<parallel_instruction>();
 		if (d != null)
 		{
+
 			
+
 			GameObject minirungobj = Instantiate(d.minirung, this.transform.parent) as GameObject;
-			minirungobj.transform.SetSiblingIndex(this.transform.GetSiblingIndex());
-			this.transform.SetParent(minirungobj.transform.GetChild(0).gameObject.transform);
+			if (minirungobj.transform.parent.name != "Panel0"){
+				minirungobj.transform.SetSiblingIndex(this.transform.GetSiblingIndex());
+				this.transform.SetParent(minirungobj.transform.GetChild(0).gameObject.transform);
+			}
+
+			if (minirungobj.transform.parent.name != "Panel" & minirungobj.transform.parent.name != "Panel (1)")
+			{
+				GameObject.Find("parallel").GetComponent<parallel_instruction>().Createpopup();
+			}
 
 			// change the rung height
 

@@ -14,7 +14,7 @@ public class draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrag");
+
   
         placeholder = new GameObject();
         
@@ -74,7 +74,7 @@ public class draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag");
+
         this.transform.SetParent(parentToReturnTo);
 
         if (placeholderParent == GameObject.FindGameObjectWithTag("Panel out").transform )
