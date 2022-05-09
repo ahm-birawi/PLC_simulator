@@ -1431,6 +1431,7 @@ GameObject:
   - component: {fileID: 1562400665072723083}
   - component: {fileID: 7421177876329957800}
   - component: {fileID: 9148762476112873366}
+  - component: {fileID: 4256325440775089586}
   m_Layer: 5
   m_Name: CTR
   m_TagString: TC
@@ -1570,6 +1571,20 @@ MonoBehaviour:
   parentToReturnTo: {fileID: 0}
   placeholderParent: {fileID: 0}
   org: {fileID: 0}
+--- !u!114 &4256325440775089586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381550825615197689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ba37349e41e894daffd9ef65cd0ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adress: {fileID: 146970339814105429}
+  presetText: {fileID: 5461240481093211458}
 --- !u!1 &1427178595316047824
 GameObject:
   m_ObjectHideFlags: 0
@@ -5862,6 +5877,7 @@ GameObject:
   - component: {fileID: 2642405295992121143}
   - component: {fileID: 4004510652633207913}
   - component: {fileID: 4361197504811634622}
+  - component: {fileID: 8510462955361567110}
   m_Layer: 5
   m_Name: CTD
   m_TagString: TC
@@ -6001,6 +6017,20 @@ MonoBehaviour:
   parentToReturnTo: {fileID: 0}
   placeholderParent: {fileID: 0}
   org: {fileID: 0}
+--- !u!114 &8510462955361567110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7181096156673594230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6e736083fa5ffe4ea46af729b8fa4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adress: {fileID: 3497460406911859866}
+  presetText: {fileID: 7246746131055271091}
 --- !u!1 &7440069244739368602
 GameObject:
   m_ObjectHideFlags: 0

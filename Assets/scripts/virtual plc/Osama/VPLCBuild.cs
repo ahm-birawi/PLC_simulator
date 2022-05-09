@@ -28,12 +28,11 @@ public class VPLCBuild : MonoBehaviour
             //right side of the rung (output instruction)
             Instruction_UI outInstuction = rung.transform.parent.GetChild(1)
                 .GetComponentInChildren<Instruction_UI>();
-            Debug.Log(outInstuction);
             outInstuction.Setup();
             currentRung.EvaluatingEntryElement.RightChild = outInstuction.MyInstruction;
             currentRung.WritingElement = (IICanWrite)outInstuction.MyInstruction;
 
-            //left side of the 
+            //left side of the rung
             currentAnd = currentRung.EvaluatingEntryElement;
             foreach (Transform inst in rung.transform)
             {
@@ -53,7 +52,6 @@ public class VPLCBuild : MonoBehaviour
             }
             plc.LadderDiagram.Add(currentRung);
         }
-        Debug.Log(plc.LadderDiagram.Count);
     }
     public static Instruction GetInstruction(Transform inst, VirtualPLC.Instructions.Rung currentRung)
     {
